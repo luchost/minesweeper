@@ -1,0 +1,6 @@
+void mark(int x, int y)
+{
+	if (!board[x][y].open) {
+		board[x][y].marked =!board[x][y].marked;
+	}
+}
