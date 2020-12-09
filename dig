@@ -16,15 +16,15 @@ void open_around(x, y) {
 bool dig(x, y)
 {
 	if (!board[x][y].open) {
-		if (!board[x][y].mines_around == 9) {
+		if (board[x][y].mines_around == 9) {
 			return true;
 		}
 		if (!board[x][y].mines_around) {
 			open_around(x, y);
 		}
-			!board[x][y].open;
+			board[x][y].open=true;
 			return false;
-		}
+	}
 	if (board[x][y].open) {
 		open_around(x, y);
 		return false;
