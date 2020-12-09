@@ -1,0 +1,9 @@
+void ask_next_move(bool* mark, int* x, int* y)
+{
+	printf("Enter a number 0 or 1, where 0 means you open a cell and 1 means you mark a cell: ");
+	scanf("%d", &mark);
+	printf("Now enter coordinate for x: ");
+	scanf("%d", &x);
+	printf("Now enter coordinate for y: ");
+	scanf("%d", &y);
+}
